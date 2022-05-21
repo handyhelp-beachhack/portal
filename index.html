@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Elegant Login Form with ParticlesJS (with form validation and show/hide password)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body id="particles-js"></body>
+  <div class="animated bounceInDown" style="padding-bottom: 50px;">
+    <div class="container">
+      <span class="error animated tada" id="msg"></span>
+      <form name="form1" id="form" class="box">
+        <h2>Handy 🎉</h2>
+        <h4>Company Admin<span> Login 🔒</span></h4>
+        <h5>Log in to your account.</h5>
+        <input type="text" name="phone" required placeholder="Phone" minlength="10" maxlength="10" autocomplete="off">
+        <a id="resend" name="resend" class="hidden" disabled style="cursor: none;text-decoration:none;pointer-events: none;">Resend OTP</a>
+        <h6 class="hidden" id="timer-tag">Resend OTP in <span id="timer"></span></h6>
+        <input class="hidden" type="text" required disabled name="otp" placeholder="OTP" maxlength="6" minlength="6" id="otp" autocomplete="off">
+        <input type="submit" name="btn" value="Generate OTP" class="btn1">
+      </form>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='https://cldup.com/S6Ptkwu_qA.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
